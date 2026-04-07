@@ -48,3 +48,44 @@ img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+.site-header {
+  display: flex;
+  justify-content: space-between; /_ logo left, nav right _/
+  align-items: center; 
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.slogan {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: #f6a0ec;
+}
