@@ -51,33 +51,37 @@ img {
 
 .site-header {
   display: flex;
-  justify-content: space-between; /_ logo left, nav right, h1 centre _/
-  align-items: center; 
+  justify-content: space-between; 
+  align-items: flex-start; 
   background-color: #ffc0cb;
   color: #fff;
-  padding: 10px 20px;
-  border: 2px solid #ccc;
+  padding: 15px 20px;
 }
 
 .brand {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 4px; 
 }
 
 .logo {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
 .slogan {
   font-size: 14px;
   color: #000000;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .main-nav {
   display: flex;
   gap: 20px;
+  background-color: #000000;
+  padding: 8px 16px;
 }
 
 .main-nav a {
@@ -88,4 +92,41 @@ img {
 
 .main-nav a:hover {
   color: #ffc0cb;
+}
+
+image{
+    display: flex;
+    justify-content: center;
+    padding: 40 px 20px;
+}
+
+.hero {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#000000
+    background color: (0, 0, 0, 0.5);
+    padding: 20px 30px
+    border-radius: 8px;
+}
+
+.hero-text p {
+    margin: 5px 0;
+    font-size: 18px ;
+    font-weight: 600;
 }
