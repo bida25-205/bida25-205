@@ -37,7 +37,7 @@ main {
 }
 
 footer {
-    background-color: #000000;
+    background-color: #ffc0cb;
     color: white;
     text-align: center;
     padding: 15px;
@@ -46,14 +46,14 @@ footer {
 
 img {
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8pxrgba(0,0,0,0.1);
 }
 
 .site-header {
   display: flex;
   justify-content: space-between; /_ logo left, nav right _/
   align-items: center; 
-  background-color: #000;
+  background-color: #ffc0cb;
   color: #fff;
   padding: 10px 20px;
   border: 2px solid #ccc;
@@ -87,5 +87,5 @@ img {
 }
 
 .main-nav a:hover {
-  color: #f6a0ec;
+  color: #ffc0cb;
 }
