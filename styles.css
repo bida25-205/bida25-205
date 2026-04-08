@@ -51,7 +51,7 @@ img {
 
 .site-header {
   display: flex;
-  justify-content: space-between; /_ logo left, nav right _/
+  justify-content: space-between; /_ logo left, nav right, h1 centre _/
   align-items: center; 
   background-color: #ffc0cb;
   color: #fff;
@@ -72,7 +72,7 @@ img {
 
 .slogan {
   font-size: 14px;
-  color: #ccc;
+  color: #000000;
 }
 
 .main-nav {
