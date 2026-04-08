@@ -130,3 +130,26 @@ image{
     font-size: 18px ;
     font-weight: 600;
 }
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px; 
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.review-grid img {
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+
+@media (max-width: 600px) {
+ .review-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
