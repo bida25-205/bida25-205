@@ -155,14 +155,19 @@ image{
 }
 
 .products-page {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 30px 20px;
 }
 
 .products-page h1 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px
 }
 
 .product {
@@ -181,6 +186,7 @@ image{
   font-weight: bold;
   color: #000000;
   margin: 0 0 15px 0;
+  text-align: center;
 }
 
 
@@ -192,9 +198,9 @@ image{
 
 
 .product-img {
-  width: 180px; 
-  height: auto;
-  border-radius: 8px;
+  width: 120px; 
+  height: 120px;
+  border-radius: 6px;
   flex-shrink: 0; 
 
 
@@ -213,6 +219,6 @@ image{
   
  .product-img {
     width: 100%; 
-    max-width: 250px;
+    max-width: 100px;
   }
 }
