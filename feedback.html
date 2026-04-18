@@ -23,7 +23,7 @@
     
     <section id="feedback" class="feedback-section">
         <div class="feedback-header">
-            <h2 class="section-title">We love hearing from you!</h2>
+            <h1 class="section-title">We love hearing from you!</h1>
         </div>
 
         <form class="feedback-form">
@@ -53,7 +53,7 @@
 
                     <div class="input-group">
                         <label>What did you love?</label>
-                        <input type="text" placeholder="e.g.The vanilla muffins...">
+                        <input type="text" placeholder="e.g.The brownies...">
                     </div>
 
                     <div class="input-group">
@@ -65,9 +65,6 @@
 
             <div class="submit-container">
                 <button type="submit" class="btn-gold submit-btn">Submit</button>
-                <p class="ty-message">Thank you for your feedback!</p>
-                <p>You've just made The Sweet Stop a little sweeter.</p>
-                <p>We read every message and use it to craft better treats for your.</p>
             </div>
         </form>
     </section>
@@ -75,4 +72,15 @@
     <footer>
        <p>&copy;2026 The sweet stop</p>
     </footer>
+    <div id="successPopup" class="popup-message hidden">
+    <div class="popup-content">
+        <i class="fas fa-check-circle"></i>
+        <h2>Thank You For Your Feedback!</h2>
+        <p>You've just made <strong>The Sweet Stop</strong> even better.</p>
+        <button onclick="closePopup()" class="btn-outline">Close</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+    </body>
+    </html>
 

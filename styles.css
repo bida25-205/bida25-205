@@ -212,10 +212,9 @@ image{
 
 .feedback-section {
     padding: 100px 8%;
-    background-image: url(specialoffer.png); 
+    background-color: #ffffff;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  
 }
 
 .section-title {
@@ -225,14 +224,9 @@ image{
     font-weight: 400;
     color: #000000;
     letter-spacing: -0.5px;
+    text-align: center;
 }
 
-.tagline {
-    color: #000000;
-    text-transform: uppercase;
-    font-size: 1.75rem;
-    letter-spacing: 2px;
-}
 
 .feedback-form {
     max-width: 1000px;
@@ -267,7 +261,7 @@ image{
 .feedback-form textarea {
     width: 100%;
     padding: 15px;
-    background-image: url(specialoffer.png);
+    background-color: #ffffff;
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -322,7 +316,7 @@ image{
 
 
 .radio-container:hover input ~ .checkmark {
-    background-color: rgba(197, 160, 89, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .radio-container input:checked ~ .checkmark {
@@ -332,15 +326,14 @@ image{
 
 .submit-container {
     text-align: center;
-    margin-top: 50px;
-    border-top: 1px solid #ffffff;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .submit-btn {
-    display: inline-block;
+    display: block;
+    text-align: center;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.95rem;
     border: none;
 }
 
@@ -349,12 +342,26 @@ image{
     box-shadow: 0 5px 20px rgba(197, 160, 89, 0.2);
 }
 
+.btn-gold {
+  background: #ffc0cb;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .ty-message {
-    color: #000000;
-    margin-top: 25px;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 0.95rem;
+  display: none;
+  text-align: center;
+  color: #000000;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.ty-message p {
+  margin: 5px 0;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -364,4 +371,45 @@ image{
     .hero { flex-direction: column-reverse; padding-top: 120px; }
     .hero-text { text-align: center; margin-top: 40px; }
     .hero-actions { justify-content: center; }
+}
+
+
+.popup-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.popup-content {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #c5a059;
+    max-width: 400px;
+    box-shadow: 0 0 30px rgba(197, 160, 89, 0.2);
+}
+
+.popup-content i {
+    font-size: 4rem;
+    color: #c5a059;
+    margin-bottom: 20px;
+}
+
+.popup-content h2 {
+    color: #c5a059;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
 }
