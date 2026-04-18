@@ -23,8 +23,7 @@
     
     <section id="feedback" class="feedback-section">
         <div class="feedback-header">
-            <p class="tagline">— Your experience</p>
-            <h2 class="section-title">" We love hearing from you! "</h2>
+            <h2 class="section-title">We love hearing from you!</h2>
         </div>
 
         <form class="feedback-form">
@@ -46,18 +45,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="form-right">
-                    <div class="input-group rating-group">
-                        <label>Rating:</label>
-                        <div class="star-rating">
-                            <i class="far fa-star" data-rating="1"></i>
-                            <i class="far fa-star" data-rating="2"></i>
-                            <i class="far fa-star" data-rating="3"></i>
-                            <i class="far fa-star" data-rating="4"></i>
-                            <i class="far fa-star" data-rating="5"></i>
-                        </div>
-                    </div>
                     
                     <div class="input-group">
                         <label>Comment:</label>
@@ -66,7 +53,7 @@
 
                     <div class="input-group">
                         <label>What did you love?</label>
-                        <input type="text" placeholder="e.g., The vanilla muffins!">
+                        <input type="text" placeholder="e.g.The vanilla muffins...">
                     </div>
 
                     <div class="input-group">
@@ -77,8 +64,10 @@
             </div>
 
             <div class="submit-container">
-                <button type="submit" class="btn-gold submit-btn">Submit Feedback</button>
-                <p class="ty-message">"Thank you" message will appear here after submit.</p>
+                <button type="submit" class="btn-gold submit-btn">Submit</button>
+                <p class="ty-message">Thank you for your feedback!</p>
+                <p>You've just made The Sweet Stop a little sweeter.</p>
+                <p>We read every message and use it to craft better treats for your.</p>
             </div>
         </form>
     </section>
@@ -87,14 +76,3 @@
        <p>&copy;2026 The sweet stop</p>
     </footer>
 
-    <script>
-        const stars = document.querySelectorAll('.star-rating i');
-        stars.forEach((star, index) => {
-            star.addEventListener('click', () => {
-                stars.forEach(s => s.classList.replace('fas', 'far')); 
-                for (let i = 0; i <= index; i++) {
-                    stars[i].classList.replace('far', 'fas'); 
-                }
-            });
-        });
-    </script>

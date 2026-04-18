@@ -212,9 +212,10 @@ image{
 
 .feedback-section {
     padding: 100px 8%;
-    background-color: #ffffff; 
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    background-image: url(specialoffer.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .section-title {
@@ -222,14 +223,14 @@ image{
     font-family: 'Playfair Display', serif; 
     font-style: italic;
     font-weight: 400;
-    color: #ffc0cb;
+    color: #000000;
     letter-spacing: -0.5px;
 }
 
 .tagline {
     color: #000000;
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 1.75rem;
     letter-spacing: 2px;
 }
 
@@ -240,11 +241,13 @@ image{
 
 .form-container {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-left, .form-right {
     flex: 1;
+    width: 100%;
 }
 
 
@@ -254,7 +257,7 @@ image{
 
 .input-group label {
     display: block;
-    color:#ffc0cb;
+    color:#000000;
     font-weight: 600;
     font-size: 0.95rem;
     margin-bottom: 10px;
@@ -264,7 +267,7 @@ image{
 .feedback-form textarea {
     width: 100%;
     padding: 15px;
-    background: #ffffff;
+    background-image: url(specialoffer.png);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -279,25 +282,6 @@ image{
     box-shadow: 0 0 10px rgba(197, 160, 89, 0.1);
 }
 
-.rating-group label {
-    margin-bottom: 15px;
-}
-
-.star-rating {
-    display: flex;
-    gap: 15px;
-    font-size: 1.8rem;
-    color: #ffc0cb;
-}
-
-.star-rating i {
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.star-rating i:hover {
-    transform: scale(1.1);
-}
 
 .radio-group {
     margin-top: 15px;
@@ -332,7 +316,7 @@ image{
     height: 18px;
     width: 18px;
     background-color: transparent;
-    border: 1px solid #ffc0cb;
+    border: 1px solid #000000;
     border-radius: 50%;
 }
 
@@ -342,7 +326,7 @@ image{
 }
 
 .radio-container input:checked ~ .checkmark {
-    background-color: #ffc0cb;
+    background-color: #ffffff;
 }
 
 
