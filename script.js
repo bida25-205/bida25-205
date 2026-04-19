@@ -1,25 +1,32 @@
 console.log("JavaScript is connected!"); 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const feedbackForm = document.getElementById('bakeryFeedbackForm');
+    const feedbackForm = document.querySelector('.feedback-form');
     const successPopup = document.getElementById('successPopup');
 
+    
     if (feedbackForm) {
-        feedbackForm.addEventListener('submit', (event) => {
-            event.preventDefault(); 
+        feedbackForm.addEventListener('submit', function(e) {
+            e.preventDefault(); 
             
-            if (successPopup) {
-                successPopup.classList.remove('hidden');
-            }
-
         
-            setTimeout(() => {
+            const formData = new FormData(this);
+
+           
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                successPopup.classList.remove('hidden');
                 feedbackForm.reset();
-                stars.forEach(s => {
-                    s.classList.remove('fas');
-                    s.classList.add('far');
-                });
-            }, 500);
+            } else {
+                alert("Oops! There was a problem. Please try again or message us on WhatsApp.");
+            }
         });
     }
 });

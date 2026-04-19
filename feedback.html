@@ -26,7 +26,7 @@
             <h1 class="section-title">We love hearing from you!</h1>
         </div>
 
-        <form class="feedback-form">
+            <form id="bakeryFeedbackForm" action="https://formspree.io/f/mgorykpa" method="POST" class="feedback-form">
             <div class="form-container">
                 
                 <div class="form-left">
@@ -35,7 +35,7 @@
                         <input type="text" placeholder="Enter your name">
                         <div class="radio-group">
                             <label class="radio-container">
-                                <input type="radio" name="display_name" value="show" checked>
+                                <input type="radio" name="display_name" value="show">
                                 <span class="checkmark"></span> Show my name
                             </label>
                             <label class="radio-container">
@@ -76,7 +76,6 @@
     <div class="popup-content">
         <i class="fas fa-check-circle"></i>
         <h2>Thank You For Your Feedback!</h2>
-        <p>You've just made <strong>The Sweet Stop</strong> even better.</p>
         <button onclick="closePopup()" class="btn-outline">Close</button>
     </div>
 </div>
