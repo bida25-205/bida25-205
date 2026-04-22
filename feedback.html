@@ -32,7 +32,7 @@
         
                     <div class="input-group">
                         <label>Name (Optional):</label>
-                        <input type="text" name="customer_name" placeholder="Enter your name">
+                        <input type="text" name="name" placeholder="Enter your name">
                         <div class="radio-group">
                             <label class="radio-container">
                                 <input type="radio" name="display_name" value="show">
@@ -48,17 +48,17 @@
                     
                     <div class="input-group">
                         <label>Comment:</label>
-                        <textarea rows="4" placeholder="Your overall thoughts..."></textarea>
+                        <textarea name="Comment" placeholder="Your overall thoughts..."></textarea>
                     </div>
 
                     <div class="input-group">
                         <label>What did you love?</label>
-                        <input type="text" placeholder="e.g.The brownies...">
+                        <input type="text" name="loved" placeholder="e.g.The brownies...">
                     </div>
 
                     <div class="input-group">
                         <label>What can we make better?</label>
-                        <input type="text" placeholder="Your suggestions...">
+                        <input type="text" name="improve" placeholder="Your suggestions...">
                     </div>
                 </div>
             </div>
@@ -72,11 +72,11 @@
     <footer>
        <p>&copy;2026 The sweet stop</p>
     </footer>
-    <div id="successPopup" class="popup-message hidden">
+
+    <div id="thankYouPopup" class="popup">
     <div class="popup-content">
-        <i class="fas fa-check-circle"></i>
         <h2>Thank You For Your Feedback!</h2>
-        <button onclick="closePopup()" class="btn-outline">Close</button>
+        <button id="closePopup">Close</button>
     </div>
 </div>
     <script src="script.js"></script>
