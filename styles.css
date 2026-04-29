@@ -67,7 +67,6 @@ main {
   color: #666;
 }
 
-
 img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -164,7 +163,6 @@ image{
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
-
 
 .products-page {
   max-width: 900px;
@@ -472,7 +470,6 @@ nav {
   margin-bottom: 0;
 }
 
-
 .product {
   width: 260px;               
   box-sizing: border-box;
@@ -491,7 +488,6 @@ nav {
   transform: translateY(-6px);
   box-shadow: 0 18px 35px rgba(0,0,0,0.15);
 }
-
 
 .product img {
   width: 100%;                
@@ -668,7 +664,6 @@ display: flex;
 
 
 
-
 .hero-section {
   min-height: 90vh;
   display: flex;
@@ -688,7 +683,6 @@ display: flex;
   position: relative;
 }
 
-
 .hero-content {
   position: relative;
   background: rgba(255, 255, 255, 0.92);
@@ -699,7 +693,6 @@ display: flex;
   margin: 0 auto;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
 }
-
 
 .hero-content h1::after {
   content: "";
@@ -762,13 +755,11 @@ display: flex;
   background: rgba(0, 0, 0, 0.35); 
 }
 
-
 .contact-page {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1.5rem;
 }
-
 
 .contact-info-box {
   max-width: 700px;
@@ -819,7 +810,6 @@ display: flex;
   font-style: italic;
   color: #666;
 }
-
 
 .contact-divider {
   width: 120px;
@@ -881,25 +871,19 @@ section + section {
   padding-top: 2rem;
 }
 
-
 @media (max-width: 1024px) {
-
   main {
     padding: 20px;
   }
-
   .hero-section {
     min-height: 90vh;
   }
-
   .products-grid {
     gap: 1.5rem;
   }
-
   .product {
     width: 240px;
   }
-
   .hero-content {
     max-width: 90%;
   }
@@ -958,7 +942,6 @@ section + section {
   body {
     padding: 0;
   }
-
 
   nav {
     padding: 15px 10px;
@@ -1040,7 +1023,4 @@ section + section {
     font-size: 1rem;
   }
 }
-
-
-
 
