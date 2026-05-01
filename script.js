@@ -67,5 +67,14 @@ document.querySelectorAll(".faq-question").forEach(button => {
   });
 });
 
+const btn = document.getElementById('hamburger-btn');
+const menu = document.getElementById('nav-menu');
+
+
+if (btn) {
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+}
 
 
