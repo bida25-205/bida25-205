@@ -1025,26 +1025,3 @@ section + section {
   }
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; 
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links.show {
-        display: flex; 
-    }
-
-    .hamburger {
-        display: block; 
-    }
-}
-@media (min-width: 769px) {
-    .hamburger {
-        display: none;
-    }
-    .nav-links {
-        display: flex; 
-    }
-}
