@@ -56,9 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-
 document.querySelectorAll(".faq-question").forEach(button => {
   button.addEventListener("click", () => {
     const answer = button.nextElementSibling;
@@ -72,5 +69,30 @@ const navLinks = document.getElementById("nav-links");
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+});
+
+const toggleButton = document.getElementById('theme-toggle');
+
+toggleButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Light Mode';
+    } else {
+        toggleButton.textContent = 'Dark Mode';
+    }
+});
+
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+backToTopButton.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
