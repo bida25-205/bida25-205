@@ -480,7 +480,7 @@ nav {
   padding: 1.5rem;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  
 }
 
 .product:hover {
@@ -505,13 +505,14 @@ nav {
 }
 
 .product h3 {
+  color: #000;
   font-size: 1.4rem;
   margin: 1rem 0 0.5rem;
   letter-spacing: 1px;
 }
 
 .product p {
-  color: #444;
+  color: #000000;
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -521,15 +522,6 @@ nav {
   font-style: italic;
 }
 
-.products-section {
-  background: linear-gradient(
-    to bottom,
-    #fff7f9,
-    #ffffff
-  );
-  padding: 4rem 1rem;
-  margin-bottom: 2rem;
-}
 
 .cupcake-images {
 display: flex;
@@ -621,6 +613,7 @@ display: flex;
 }
 
 .offers-list li {
+  color: #000000;
   background: #ffffff;
   margin-bottom: 1rem;
   padding: 1rem 1.2rem;
@@ -649,7 +642,7 @@ display: flex;
 
 .note {
   font-size: 0.9rem;
-  color: #555;
+  color: #000000;
   margin-top: 2rem;
 }
 
@@ -828,7 +821,7 @@ display: flex;
 
 .faq-intro {
   text-align: center;
-  color: #555;
+  color: #000000;
   margin-bottom: 2.5rem;
 }
 
@@ -1057,11 +1050,12 @@ section + section {
 }
 
 body.dark-mode {
-    background-color: #333333;
+    background-color: #353434;
     color: #f9f9f9;
 }
 body.dark-mode nav { background-color: #222222; }
 #theme-toggle { padding: 8px 16px; cursor: pointer; margin: 10px; }
+
 
 
 #back-to-top {
@@ -1081,4 +1075,6 @@ body.dark-mode nav { background-color: #222222; }
     transition: background-color 0.3s;
 }
 #back-to-top:hover { background-color: #e5609c; }
+
+
 
