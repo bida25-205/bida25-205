@@ -299,7 +299,7 @@ image{
   }
 
   input[type="radio"] {
-    accent-color: #ffc0ff;
+    accent-color: #000000;
     width: 18px;
     height: 18px;
   }
@@ -310,7 +310,7 @@ image{
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;             
-    background-color: #ffc0ff;  
+    background-color: #d63384;  
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -319,7 +319,7 @@ image{
   }
 
   button[type="submit"]:hover {
-    background-color: #b02a5b;  
+    background-color: #000000;  
     transform: translate(-2px);
     box-shadow: 0 6px 15px rgba(214, 51, 132, 0.4);
   }
